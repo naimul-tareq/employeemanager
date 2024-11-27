@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package employeemanager;
-
 import java.io.*;
 import java.util.*;
 
@@ -21,7 +14,7 @@ public class EmployeeManager {
                     System.out.println(emp);
                 }
             } 
-            catch (IOException e) {}
+            catch (Exception e) {}
             System.out.println("Data Loaded.");
         } 
         else if (args[0].equals("s")) {
@@ -35,7 +28,7 @@ public class EmployeeManager {
                 Random rand = new Random();
                 int idx = rand.nextInt(e.length);
                 System.out.println(e[idx]);
-            }catch (IOException e) {}
+            }catch (Exception e) {}
 
             System.out.println("Data Loaded.");
         } 
@@ -67,7 +60,7 @@ public class EmployeeManager {
                     }
                 }
             } 
-            catch (IOException e) {}
+            catch (Exception e) {}
             System.out.println("Data Loaded.");
         } 
         else if (args[0].contains("c")) {
@@ -90,7 +83,7 @@ public class EmployeeManager {
                 }
                 System.out.println(count + " word(s) found " + chars.length);
             } 
-            catch (IOException e) {}
+            catch (Exception e) {}
             System.out.println("Data Loaded.");
         } 
         else if (args[0].contains("u")) {
